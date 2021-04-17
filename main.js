@@ -8,9 +8,7 @@ const app = document.querySelector('#app');
 const prepareWorkers = () => {
 
   window.target--;
-  
-  if (window.target == 0) clearInterval(interval);
-
+ 
   queue.enqueue(function ({p}) {
     return new Promise((resolve, reject) => {
       app.append('💸');
